@@ -142,8 +142,6 @@ a {
 
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: normal;
-	color: #283136;
 }
 
 .slider-details a {
@@ -171,3 +169,123 @@ a {
 
 	background-color: #d7373b;
 }
+/*----------------------------------------------*/
+.advantages {
+	/*margin-top: 147px;*/
+	padding: 80px 200px 80px 140px;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.advantages-item {
+	padding-right: 53px;
+}
+
+.advantages-item  h3 {
+	margin-top: 171px;
+	margin-bottom: 16px;
+
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+}
+
+.advantages-item  h3::before {
+	content: "";
+	position: absolute;
+
+	width: 300px;
+	height: 146px;
+	margin-left: 0px;
+	margin-top: -171px;  
+	background-image: url("../img/illustration-1.png");
+}
+
+.advantages-item:nth-child(3n+2)  h3::before {
+	background-image: url("../img/illustration-2.png");
+}
+
+.advantages-item:nth-child(3n+3)  h3::before {
+	background-image: url("../img/illustration-3.png");
+}
+
+.advantages-item  p {
+	display: block;
+
+	max-width: 247px;
+	margin: 0;
+	margin-bottom: 32px;
+
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.advantages-item  a {
+	display: inline-block;
+
+	padding: 17px 40px 15px 40px;
+
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #ffffff;
+
+	background-color: #fb565a;
+
+	border-radius: 2px;
+}
+
+.advantages-item:nth-child(3n+2) a {
+	background-color: #00ca74;
+}
+
+.advantages-item:nth-child(3n+3) a {
+	background-color: #efc84a;
+}
+
+.advantages-item  a:hover {
+	background-color: #e74246;
+}
+
+.advantages-item  a:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #d7373b;
+}
+
+.advantages-item:nth-child(3n+2) a:hover {
+	background-color: #00bc6c;
+}
+
+.advantages-item:nth-child(3n+2) a:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #00aa62;
+}
+
+.advantages-item:nth-child(3n+3) a:hover {
+	background-color: #eab534;
+}
+
+.advantages-item:nth-child(3n+3) a:active {
+	color: rgba(255, 255, 255, 0.3);
+	
+	background-color: #e5a722;
+}
+
+
