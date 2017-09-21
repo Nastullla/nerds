@@ -171,10 +171,7 @@ a {
 }
 /*----------------------------------------------*/
 .advantages {
-	/*margin-top: 147px;*/
-	padding: 80px 200px 80px 140px;
-
-	border-bottom: 2px solid #eeeeee;
+	padding: 80px 200px 82px 140px;
 }
 
 .advantages-list {
@@ -288,4 +285,74 @@ a {
 	background-color: #e5a722;
 }
 
+.advantages::after {
+	content: "";
+	position: absolute;
+	display: block;
 
+	width: 1160px;
+	height: 2px;
+	margin-top: 80px;  
+
+	background-color: #eeeeee;
+}
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+.clients {
+	padding: 46px 140px 44px 140px;
+}
+
+.clients-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.client-item {
+	position: relative;
+
+	width: 260px;
+}
+
+.client-item img {
+	display: block;
+
+	margin: 0 auto;
+
+	opacity: 0.2;
+}
+
+.client-item a:hover img{
+	opacity: 1;
+}
+
+.client-item a:active img{
+	opacity: 0.2;
+}
+
+.client-item:nth-child(1) img {
+	transform: translate(0, 5px);
+}
+
+.client-item:nth-child(4) img {
+	transform: translate(0, 3px);
+}
+
+.client-item:not(:nth-child(4n+1))::before {
+	content: "";
+	position: absolute;
+	display: block;
+
+	width: 2px;
+	height: 52px;
+	top: 50%;
+
+	background-color: #eeeeee;
+
+	transform: translate(-22px, -50%);
+}
