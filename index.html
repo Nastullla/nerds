@@ -134,6 +134,32 @@
  			</main>
 
  			<footer class="main-footer">
+
+ 				<section class="modal modal-hide">
+ 					<form action="https://echo.htmlacademy.ru" method="post">
+						<p>Напишите нам</p>
+						<button class="close" type="button">
+							<span class="visually-hidden">Закрыть</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#ffd2d2" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+						</button>
+						<div class="data">
+							<div>
+								<label for="name">Ваше имя:</label>
+								<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div>
+								<label for="mail">Ваш e-mail:</label>
+								<input type="text" name="mail" id="mail" placeholder="Для отправки ответа">
+							</div>
+						</div>
+						<div class="letter">
+							<label for="letter">Текст письма:</label>
+							<textarea name="letter" id="letter" rows="6" placeholder="В свободной форме"></textarea>
+						</div>
+						<button class="feedback" type="submit">Отправить</button>
+					</form>
+				</section>
+
  				<div class="map">
  					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1941.7188033082487!2d30.321900805621162!3d59.93852156412675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506507138425" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
  					<span class="visually-hidden">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</span>
@@ -141,7 +167,7 @@
  						<b>NЁRDS DESIGN STUDIO</b>
  						<p class="adress-wrapper">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 	
  						<p class="phone-wrapper">тел. +7 (812) 275-75-75</p> 
- 						<a href="#">Напишите нам</a>					
+ 						<a class="write-to-us" href="#">Напишите нам</a>					
  					</div>
  				</div>
  				<div class="footer-social">
@@ -178,29 +204,7 @@
  				</div>
  			</footer>
 		
-			<section class="modal">
-				<p>Напишите нам</p>
-				<button class="close" type="button">
-					<span class="visually-hidden">Закрыть</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#ffd2d2" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
-				</button>
-				<div class="data">
-					<div>
-						<label for="name">Ваше имя:</label>
-						<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-					</div>
-					<div>
-						<label for="mail">Ваш e-mail:</label>
-						<input type="text" name="mail" id="mail" placeholder="Для отправки ответа">
-					</div>
-				</div>
-				<div class="letter">
-					<label for="letter">Текст письма:</label>
-					<textarea name="letter" id="letter" rows="6">В свободной форме</textarea>
-				</div>
-				<button class="feedback">Отправить</button>
-			</section>
 		</div>
-		<!-- <script src="js/modal.js" type="text/javascript"></script>	 -->
+		<script src="js/modal.js" type="text/javascript"></script>	
   	</body>
 </html>
