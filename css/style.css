@@ -72,6 +72,9 @@ a {
 
 .site-navigation {
 	display: flex;
+
+	margin: 0;
+	padding: 0; 
 }
 
 .main-navigation a {
@@ -147,7 +150,7 @@ a {
 .slider-details a {
 	display: inline-block;
 
-	padding: 16px 55px 16px 54px;
+	padding: 17px 55px 15px 54px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -226,8 +229,6 @@ a {
 	margin: 0;
 	margin-bottom: 32px;
 
-	font-size: 16px;
-	line-height: 24px;
 	color: #000000;
 }
 
@@ -374,7 +375,7 @@ a {
 	margin: 0;
 	margin-top: 36px;
 	margin-left: 19px;
-	margin-bottom: 38px; 
+	margin-bottom: 39px; 
 
 	text-transform: uppercase;
 	color: #000000;
@@ -397,8 +398,13 @@ a {
 }
 
 .percent span {
+	display: inline-block;
+
+	vertical-align: top;
+
 	font-size: 25px;
-	line-height: 20px;
+	line-height: 25px;
+	font-weight: 700;
 }
 
 .percent td {
@@ -495,11 +501,81 @@ a {
 }
 
 .map {
+	position: relative;
+
 	width: 1440px; 
 	height: 416px;
 
 	background: #eeeeee url("../img/map.jpg") no-repeat;
 }
+
+.write-us {
+	position: absolute;
+
+	padding: 49px 50px 47px 50px;
+
+	top: 54px;
+	left: 140px;
+
+	background-color: #ffffff;
+}
+
+.write-us b {
+	display: inline-block;
+
+	margin: 0;
+	margin-bottom: 24px;
+
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.write-us p {
+	width: 205px;
+	margin: 0;
+
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #666666;
+}
+
+.write-us .adress-wrapper {
+	margin-bottom: 17px; 
+}
+
+.write-us .phone-wrapper {
+	margin-bottom: 37px;
+}
+
+.write-us a {
+	display: inline-block;
+
+	padding: 17px 44px 15px 45px;
+
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #ffffff;
+
+	background-color: #fb565a;
+
+	border-radius: 2px;
+}
+
+.write-us a:hover {
+	background-color: #e74246;
+}
+
+.write-us a:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #d7373b;
+}
+
 
 .footer-social {
 	display: flex;
@@ -590,4 +666,161 @@ a {
 
 	line-height: 22px;
 	color: #444444;
+}
+/*----------------------------------------------*/
+.modal {
+	position: absolute;
+
+	padding: 67px 100px 84px 98px;
+
+	background-color: #eeeeee;
+
+	box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75); 
+}
+
+.modal p {
+	margin: 0;
+	margin-bottom: 42px;
+
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.data {
+	display: flex;
+	justify-content: space-between;
+
+	width: 762px;
+}
+
+.data label {
+	display: block;
+
+	margin-left: 2px;
+	margin-bottom: 10px;
+
+	font: inherit;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 700;
+	color: #000000;
+}
+
+
+.data input {
+	width: 343px;
+	height: 44px;
+	margin-left: 2px;
+	padding-left: 13px;
+
+	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #444444;
+
+	border-width: 2px;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: #dbdcde;
+}
+
+.data input:hover {
+	border-color: #b4b8b9;
+}
+
+.data input:focus {
+	border-color: #000000;
+
+	outline: none;
+}
+
+.letter label {
+	display: block;
+
+	margin-top: 34px;
+	margin-left: 2px;
+	margin-bottom: 11px;
+
+	font: inherit;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.letter textarea {
+	width: 742px;
+	height: 102px;
+	margin-left: 2px;
+	margin-bottom: 40px;
+	padding-top: 10px;
+	padding-left: 12px;
+
+	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #444444;
+
+	border-width: 2px;
+	border-radius: 2px;
+	border-color: #dbdcde;
+}
+
+.letter textarea:hover {
+	border-color: #b4b8b9;
+}
+
+.letter textarea:focus {
+	border-color: #000000;
+
+	outline: none;
+}
+
+
+.close {
+	position: absolute;
+	top: 78px;
+	right: 84px;
+
+	background: none; 
+	border: none;
+}
+
+.close:hover path {
+	fill: #ff5255;
+}
+
+.close:active path {
+	fill: #fff1f1;
+}
+
+.feedback {
+	margin-left: 2px;
+	padding: 16px 86px 16px 82px;
+
+	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #ffffff;
+
+	background-color: #fb565a;
+
+	border-style: none;
+	border-radius: 2px;
+}
+
+.feedback:hover {
+	background-color: #e74246;
+}
+
+.feedback:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #d7373b;
 }
