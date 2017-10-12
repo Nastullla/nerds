@@ -10,9 +10,9 @@
   	</head>
   	<body>
   		<div class="container">
-  			<header class="main-header">
+  			<header class="header">
 				<nav class="main-navigation">
-					<a class="main-header-logo">
+					<a class="main-header-logo" href="index.html">
 						<img src="img/nerds-logo.svg" width="160" height="65">
 					</a>
 					<ul class="site-navigation">
@@ -38,16 +38,16 @@
  	 		</header>
 	
  			<main>
- 				<section>
+ 				<section class="header-catalog">
  					<h1>Магазин готовых шаблонов</h1>
  				</section>
 				
 				<section class="catalog">
-					<div>
+					<div class="filter-form-wrapper">
 						<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 							<fieldset class="filter-group filter-group-price">
 								<legend class="filter-title">Стоимость:</legend>
-								<div class="range-controls">
+								<!-- <div class="range-controls"> 
 									<div class="scare">
 										<div class="bar"></div>
 									</div>
@@ -61,57 +61,58 @@
 									<label class="max-price">до 
 										<input type="text" name="max-price" value="3000">
 									</label>
-								</div>		
+								</div>	-->	
 							</fieldset>
 
 							<fieldset class="filter-group">
-								<legend class="filter-title">Сетка:</legend>
+								<legend class="filter-title filter-title-grid">Сетка:</legend>
 								<ul class="filter-options-list">
-									<li class="filter-option">
-										<input type="radio" id="grid-1" name="grid" value="Адаптивная" checked>
+									<li class="filter-option-grid">
+										<input class="filter-input-grid visually-hidden" type="radio" id="grid-1" name="grid" value="Адаптивная" checked>
 										<label for="grid-1">Адаптивная</label>
 									</li>
-									<li class="filter-option">
-										<input type="radio" id="grid-2" name="grid" value="Фиксированная">
+									<li class="filter-option-grid">
+										<input class="filter-input-grid visually-hidden" type="radio" id="grid-2" name="grid" value="Фиксированная">
 										<label for="grid-2">Фиксированная</label>
 									</li>
-									<li class="filter-option">
-										<input type="radio" id="grid-3" name="grid" value="Резиновая">
+									<li class="filter-option-grid">
+										<input class="filter-input-grid visually-hidden" type="radio" id="grid-3" name="grid" value="Резиновая">
 										<label for="grid-3">Резиновая</label>
 									</li>
 								</ul>								
 							</fieldset>
 
 							<fieldset class="filter-group">
-								<legend class="filter-title">Особенности:</legend>
+								<legend class="filter-title filter-title-feature">Особенности:</legend>
 								<ul class="filter-options-list">
-									<li class="filter-option">
-										<input class="filter-input visually-hidden" type="checkbox" id="slider" name="slider" checked>
+									<li class="filter-option-feature">
+										<input class="filter-input-feature visually-hidden" type="checkbox" id="slider" name="slider" checked>
 										<label for="slider">Слайдер</label>
 									</li>
-									<li class="filter-option">
-										<input class="filter-input visually-hidden" type="checkbox" id="advantages" name="advantages">
+									<li class="filter-option-feature">
+										<input class="filter-input-feature visually-hidden" type="checkbox" id="advantages" name="advantages">
 										<label for="advantages">Блок преимуществ</label>
 									</li>
-									<li class="filter-option">
-										<input class="filter-input visually-hidden" type="checkbox" id="news" name="news" checked>
-										<label for="news">Носвости</label>	
+									<li class="filter-option-feature">
+										<input class="filter-input-feature visually-hidden" type="checkbox" id="news" name="news" checked>
+										<label for="news">Новости</label>	
 									</li>
-									<li class="filter-option">
-										<input class="filter-input visually-hidden" type="checkbox" id="gallery" name="gallery">
+									<li class="filter-option-feature">
+										<input class="filter-input-feature visually-hidden" type="checkbox" id="gallery" name="gallery">
 										<label for="gallery">Галерея</label>	
 									</li>
-									<li class="filter-option">
-										<input class="filter-input visually-hidden" type="checkbox" id="cart" name="cart">
+									<li class="filter-option-feature">
+										<input class="filter-input-feature visually-hidden" type="checkbox" id="cart" name="cart">
 										<label for="cart">Корзина</label>	
 									</li>
 								</ul>
 						</fieldset>
+						<button class="aplly-btn" type="submit">Показать</button>
 						</form>
 					</div>
 
-					<div>
-						<div class="sort-type-wrapper">
+					<div class="sort-wrapper">
+						<div class="sort-type">
 							<p class="sort">Сортировать:</p>
 							<ul class="sort-options">
 								<li class="sort-option">
@@ -126,28 +127,106 @@
 							</ul>
 							<ul class="sort-order">
 								<li class="order-option">
-									<a class="order-option-link" href="#">
-										<span class="visually-hidden">по возрастанию</span>
-										<svg class="order-option-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
+									<a class="order-option-link order-option-selected" href="#">
+										<span class="visually-hidden">по убыванию</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 10L0 0h11"/></svg>
 									</a>
 								</li>
 								<li class="order-option">
-									<a class="order-option-link order-option-selected" href="#">
-										<span class="visually-hidden">по убыванию</span>
-										<svg class="order-option-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
+									<a class="order-option-link" href="#">
+										<span class="visually-hidden">по возрастанию</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 0L0 10h11z"/></svg>
 									</a>
 								</li>
 							</ul>
 						</div>
 
-						<div>
-							
+						<div class="design">
+							<a class="design-item" href="#">
+								<div class="browser"></div>
+								<img src="img/img-sedona.jpg" width="360" height="576">
+								<div class="details">
+									<h3>Sedona</h3>
+									<p>Информационный сайт<br>для туристов</p>
+									<button class="buy" type="button">9 900 руб.</button>	
+								</div>
+							</a>
+							<a class="design-item" href="#">
+								<div class="browser"></div>
+								<img src="img/img-pink.jpg" width="360" height="576">
+								<div class="details">
+									<h3>Pink App</h3>
+									<p>Продуктовый лендинг приложения для iOS и Android</p>
+									<button class="buy" type="button">9 900 руб.</button>	
+								</div>
+							</a>
+							<a class="design-item" href="#">
+								<div class="browser"></div>
+								<img src="img/img-barbershop.jpg" width="360" height="576">
+								<div class="details">
+									<h3>Barbershop</h3>
+									<p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+									<button class="buy" type="button">9 900 руб.</button>	
+								</div>
+							</a>
+							<a class="design-item" href="#">
+								<div class="browser"></div>
+								<img src="img/img-mishka.jpg" width="360" height="576">
+								<div class="details">
+									<h3>MISHKA</h3>
+									<p>Интернет-магазин<br>вязаных игрушек</p>
+									<button class="buy" type="button">9 900 руб.</button>	
+								</div>
+							</a>
+							<a class="design-item" href="#">
+								<div class="browser"></div>
+								<img src="img/img-aplus.jpg" width="360" height="576">
+								<div class="details">
+									<h3>A Plus</h3>
+									<p>Лендинг курсов повышения квалификации</p>
+									<button class="buy" type="button">9 900 руб.</button>	
+								</div>
+							</a>
+							<a class="design-item" href="#">
+								<div class="browser"></div>
+								<img src="img/img-kvast.jpg" width="360" height="576">
+								<div class="details">
+									<h3>КВАСТ</h3>
+									<p>Промо-сайт производителя крафтового кваса</p>
+									<button class="buy" type="button">9 900 руб.</button>	
+								</div>
+							</a>
 						</div>
 					</div>
 				</section>
  			</main>
 
  			<footer class="main-footer">
+ 				<section class="modal modal-hide">
+ 					<form action="https://echo.htmlacademy.ru" method="post">
+						<p>Напишите нам</p>
+						<button class="close" type="button">
+							<span class="visually-hidden">Закрыть</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#ffd2d2" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+						</button>
+						<div class="data">
+							<div>
+								<label for="name">Ваше имя:</label>
+								<input class="name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div>
+								<label for="mail">Ваш e-mail:</label>
+								<input class="mail" type="text" name="mail" id="mail" placeholder="Для отправки ответа">
+							</div>
+						</div>
+						<div class="letter">
+							<label for="letter">Текст письма:</label>
+							<textarea class="text-letter" name="letter" id="letter" rows="6" placeholder="В свободной форме"></textarea>
+						</div>
+						<button class="feedback" type="submit">Отправить</button>
+					</form>
+				</section>
+
  				<div class="map">
  					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1941.7188033082487!2d30.321900805621162!3d59.93852156412675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506507138425" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
  					<span class="visually-hidden">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</span>
