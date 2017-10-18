@@ -22,8 +22,8 @@
 						<li class="site-navigation-item">
 							<a href="customers.html">Клиенты</a>
 						</li>
-						<li class="site-navigation-item">
-							<a href="catalog.html">Магазин</a>
+						<li class="site-navigation-item site-navigation-current">
+							<a>Магазин</a>
 						</li>
 						<li class="site-navigation-item">
 							<a href="contacts.html">Контакты</a>
@@ -47,21 +47,23 @@
 						<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 							<fieldset class="filter-group filter-group-price">
 								<legend class="filter-title">Стоимость:</legend>
-								<!-- <div class="range-controls"> 
-									<div class="scare">
-										<div class="bar"></div>
-									</div>
-									<div class="range-toggle range-toggle-min"></div>
-									<div class="range-toggle range-toggle-max"></div>
-								</div>	
-								<div class="price-controls">
-									<label class="min-price">от 
-										<input type="text" name="min-price" value="0">
-									</label>
-									<label class="max-price">до 
-										<input type="text" name="max-price" value="3000">
-									</label>
-								</div>	-->	
+								<div class="range-filter">
+									<div class="range-controls"> 
+										<div class="scare">
+											<div class="bar"></div>
+										</div>
+										<div class="range-toggle range-toggle-min"></div>
+										<div class="range-toggle range-toggle-max"></div>
+									</div>	
+									<div class="price-controls">
+										<label class="min-price">от 
+											<input type="text" name="min-price" value="0">
+										</label>
+										<label class="max-price">до 
+											<input type="text" name="max-price" value="15000">
+										</label>
+									</div>	
+								</div>
 							</fieldset>
 
 							<fieldset class="filter-group">
@@ -197,11 +199,18 @@
 								</div>
 							</a>
 						</div>
+
+						<div class="pagination">
+							<a class="page current-page">1</a>
+							<a class="page" href="#">2</a>
+							<a class="page" href="#">3</a>
+							<a class="next-page" href="#">Следующая</a>
+						</div>
 					</div>
 				</section>
  			</main>
 
- 			<footer class="main-footer">
+ 			<footer class="main-footer footer-wrapper">
  				<section class="modal modal-hide">
  					<form action="https://echo.htmlacademy.ru" method="post">
 						<p>Напишите нам</p>
