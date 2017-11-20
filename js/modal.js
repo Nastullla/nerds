@@ -9,6 +9,7 @@ var letterValue = popup.querySelector("[name=letter]");
 btnWrite.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.remove("modal-hide");
+  popup.classList.remove("modal-error");
 });
 
 btnClose.addEventListener("click", function (evt) {
@@ -20,6 +21,9 @@ function ValidateField(field, evt) {
   if (!field.value) {
     field.classList.add("validaition-error");
     evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
   }  
 }
 
